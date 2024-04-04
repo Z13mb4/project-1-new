@@ -1,4 +1,8 @@
 body {
+    margin: 0;
+}
+header {
     height: 100vh;
-    background-color: cadetblue ;
+    background:url('../assets/img/bg_header.webp') center/cover;
+    background-size: cover;
 }
