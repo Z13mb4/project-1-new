@@ -1,20 +1,30 @@
+html{
+    font-size: 10px;
+}
 @use 'reset';
 body {
     font-family: "Lato", sans-serif;
+    height: 300vh;
 }
 header {
     height: 100vh;
-    background:url('../assets/img/bg_header.webp') center/cover;
+    background:url('../assets/img/bg_header.webp') center/cover fixed;
     color: #fff;
-    h1{
-        font-size: 3.8rem;
-        font-weight: bold;
-    }
     display:flex;
     align-items: center;
     justify-content: center;
-}
-html{
-    font-size: 10px;
+    h1{
+        font-size: 3.8rem;
+        font-weight:bold;
+        align-items: center;
+        line-height: 5rem;
+        
+        @media  screen and (min-width: 800px) {
+            font-size: 6rem;
+        }
+        @media  screen and (min-width: 1200px) {
+            font-size: 10rem;
+        }
+    }
 }
 
