@@ -1,4 +1,6 @@
 @use 'variables' as v;
+@use 'mixins' as m;
+
 header {
     height: 100vh;
     background:url('../assets/img/bg_header.webp') center/cover fixed;
@@ -7,24 +9,55 @@ header {
     align-items: center;
     justify-content: center;
     h1{
-        z-index: 1;
         font-size: 3.8rem;
         font-weight:bold;
         align-items: center;
         line-height: 5rem;
-        
-        @media  screen and (min-width: 800px) {
+        @include m.md {
             font-size: 6rem;
+
         }
-        @media  screen and (min-width: 1200px) {
+        @include m.lg {
             font-size: 10rem;
         }
     }
+
     &::after{
         content: '';
         background-color: v.$color-bg-header;
         position: absolute;
         width: 100%;
         height: 100%;
+    }
+}
+
+.header-box {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*@include m.md {
+        align-items: flex-start;
+    }*/
+
+    h1 {
+        margin-bottom: 50px;
+    }
+
+    a {
+        background-color: v.$color-bg-link-header;
+        width: 25%;
+        @include m.md {
+            width: 25%;
+        }
+        padding: 20px;
+        text-align: center;
+        font-size: 2rem;
+        border-radius: 6px;
+        transition: .5s;
+        &:hover {
+            background-color: v.$color-bg-link-header-href;
+            transform: translateY(-5px);
+        }
     }
 }
