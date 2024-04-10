@@ -70,6 +70,48 @@ a {
   text-decoration: none;
 }
 
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  background-color: #336303;
+  color: white;
+  font-size: 2.2rem;
+  z-index: 2;
+}
+
+.logo {
+  flex-basis: 50%;
+  padding-left: 30px;
+}
+
+.menu {
+  flex-basis: 50%;
+  text-align: right;
+  padding-right: 30px;
+}
+.menu span {
+  font-size: 3.6rem;
+}
+
+/*@mixin box-square($size, $border-color) {
+    width: $size;
+    height: $size;
+    border: 1px solid $border-color;
+    margin: 10px;
+}
+
+.test {
+    @include box-square(300px, red);
+}
+
+.test2 {
+    @include box-square(400px, blue);
+} */
 header {
   height: 100vh;
   background: url("../assets/img/bg_header.webp") center/cover fixed;
@@ -79,6 +121,7 @@ header {
   justify-content: center;
 }
 header h1 {
+  text-align: center;
   font-size: 3.8rem;
   font-weight: bold;
   align-items: center;
@@ -91,7 +134,7 @@ header h1 {
 }
 @media screen and (min-width: 1200px) {
   header h1 {
-    font-size: 10rem;
+    font-size: 8rem;
   }
 }
 header::after {
@@ -107,7 +150,7 @@ header::after {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /*@include m.md {
+  /*@include m.lg {
       align-items: flex-start;
   }*/
 }
