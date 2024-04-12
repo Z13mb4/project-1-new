@@ -176,4 +176,14 @@ header::after {
   transform: translateY(-5px);
 }
 
+section {
+  min-height: 100vh;
+}
+section h2 {
+  text-align: center;
+  margin: 30px 0;
+  font-weight: bold;
+  font-size: 3.6rem;
+}
+
 /*# sourceMappingURL=style.css.map */
