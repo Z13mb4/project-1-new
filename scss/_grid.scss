@@ -28,7 +28,40 @@
     width: 100%;
 
     &-md50 {
-        padding: 20px;
-        flex: 0 0 50%;
+        @include m.md {
+            padding: 20px;
+            flex: 0 0 50%;
+        }
+    }
+    
+    &-md33 {
+        @include m.md {
+            flex: 0 0 33.333333%;
+        }
+    }
+
+    &-md25 {
+        @include m.md {
+            flex: 0 0 25%;
+        }
+    }
+
+    &-lg50 {
+        @include m.lg {
+            padding: 20px;
+            flex: 0 0 50%;
+        }
+    }
+
+    &-lg33 {
+        @include m.lg {
+            flex: 0 0 33.333333%;
+        }
+    }
+
+    &-lg25 {
+        @include m.lg {
+            flex: 0 0 25%;
+        }
     }
 }
