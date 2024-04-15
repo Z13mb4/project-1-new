@@ -54,7 +54,6 @@ table {
 
 *, *::after, *::before {
   box-sizing: border-box;
-  font-family: "Lato", sans-serif;
 }
 
 html, body {
@@ -67,6 +66,7 @@ html {
 
 body {
   height: 300vh;
+  font-family: "Lato", sans-serif;
 }
 
 a {
@@ -183,6 +183,9 @@ header::after {
 section {
   min-height: 100vh;
 }
+section:nth-of-type(even) {
+  background-color: whitesmoke;
+}
 section h2 {
   text-align: center;
   padding: 70px 0;
@@ -196,6 +199,30 @@ section h3 {
 section p {
   font-size: 1.6rem;
   padding: 20px 0;
+}
+
+.menu-box {
+  box-shadow: 0 0 10px gray;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.menu-box:hover {
+  box-shadow: 0 0 20px grey;
+}
+
+.picture {
+  height: 160px;
+  background: url("../assets/img/bg_header.webp") center/cover;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.text {
+  height: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
@@ -284,6 +311,12 @@ input[type=submit], textarea[type=submit] {
 
 textarea {
   resize: none;
+}
+
+footer {
+  background-color: #0d0d0d;
+  color: white;
+  height: 40vh;
 }
 
 /*# sourceMappingURL=style.css.map */

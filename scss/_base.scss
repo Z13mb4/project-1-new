@@ -1,6 +1,6 @@
 *,*::after,*::before{
     box-sizing: border-box;
-    font-family: "Lato", sans-serif;
+    
 }
 
 html, body {
@@ -12,6 +12,7 @@ html{
 }
 body {
     height: 300vh;
+    font-family: "Lato", sans-serif;
 }
 
 a {
