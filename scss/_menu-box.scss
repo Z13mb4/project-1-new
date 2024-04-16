@@ -2,17 +2,28 @@
     box-shadow: 0 0 10px gray;
     border-radius: 6px;
     cursor: pointer;
+    opacity: .8;
 
     &:hover {
         box-shadow: 0 0 20px grey;
+        opacity: 1;
     }
 }
 
 .picture {
     height: 160px;
-    background: url('../assets/img/bg_header.webp') center/cover;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
+}
+
+// .picture1 {
+//     background: url('../assets/photo/pizza1.webp') center/cover;
+// }
+
+@for $i from 1 through 4 {
+    .picture#{$i} {
+        background: url('../assets/photo/pizza#{$i}.webp') center/cover;
+    }
 }
 
 .text {

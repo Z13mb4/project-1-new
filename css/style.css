@@ -205,16 +205,33 @@ section p {
   box-shadow: 0 0 10px gray;
   border-radius: 6px;
   cursor: pointer;
+  opacity: 0.8;
 }
 .menu-box:hover {
   box-shadow: 0 0 20px grey;
+  opacity: 1;
 }
 
 .picture {
   height: 160px;
-  background: url("../assets/img/bg_header.webp") center/cover;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
+}
+
+.picture1 {
+  background: url("../assets/photo/pizza1.webp") center/cover;
+}
+
+.picture2 {
+  background: url("../assets/photo/pizza2.webp") center/cover;
+}
+
+.picture3 {
+  background: url("../assets/photo/pizza3.webp") center/cover;
+}
+
+.picture4 {
+  background: url("../assets/photo/pizza4.webp") center/cover;
 }
 
 .text {
@@ -307,6 +324,12 @@ input:focus, textarea:focus {
 }
 input[type=submit], textarea[type=submit] {
   margin-top: 30px;
+  background-color: #488C03;
+  color: white;
+  width: 16%;
+  position: absolute;
+  left: 42%;
+  cursor: pointer;
 }
 
 textarea {
