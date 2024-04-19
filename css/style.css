@@ -320,7 +320,7 @@ input, textarea {
   outline: 0;
 }
 input:focus, textarea:focus {
-  border: 1px solid gray;
+  border: 2px solid #488C03;
 }
 input[type=submit], textarea[type=submit] {
   margin-top: 30px;

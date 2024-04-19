@@ -21,7 +21,7 @@ input {
     border: 1px solid lightgrey;
 
     &:focus{
-        border: 1px solid gray;
+        border: 2px solid v.$color-bg-link-header;
     }
 
     outline: 0;
