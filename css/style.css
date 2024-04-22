@@ -74,6 +74,20 @@ a {
   text-decoration: none;
 }
 
+/*@mixin box-square($size, $border-color) {
+    width: $size;
+    height: $size;
+    border: 1px solid $border-color;
+    margin: 10px;
+}
+
+.test {
+    @include box-square(300px, red);
+}
+
+.test2 {
+    @include box-square(400px, blue);
+} */
 nav {
   position: fixed;
   top: 0;
@@ -97,25 +111,48 @@ nav {
   flex-basis: 50%;
   text-align: right;
   padding-right: 30px;
+  cursor: pointer;
 }
 .menu span {
   font-size: 3.6rem;
 }
 
-/*@mixin box-square($size, $border-color) {
-    width: $size;
-    height: $size;
-    border: 1px solid $border-color;
-    margin: 10px;
+.div-menu {
+  background-color: aqua;
+  color: black;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.4rem;
+}
+@media screen and (min-width: 1200px) {
+  .div-menu {
+    width: 20%;
+  }
+}
+.div-menu li {
+  padding: 20px;
+  text-align: center;
+}
+.div-menu .material-icons {
+  color: inherit;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 40px;
+  cursor: pointer;
 }
 
-.test {
-    @include box-square(300px, red);
+.hide-menu {
+  display: none;
 }
 
-.test2 {
-    @include box-square(400px, blue);
-} */
 header {
   height: 100vh;
   background: url("../assets/img/bg_header.webp") center/cover fixed;
@@ -345,8 +382,8 @@ textarea {
   background-color: rgba(255, 48, 48, 0.6);
 }
 .alert-success {
-  width: 95%;
-  margin: 0 auto;
+  width: 100%;
+  margin: 20px auto;
   text-align: center;
   padding: 16px;
   font-size: 1.6rem;
