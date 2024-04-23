@@ -8,11 +8,13 @@ const links = document.querySelectorAll('.div-menu a, .div-menu .material-icons'
 links.forEach(elem => {
     elem.addEventListener('click', () => {
         menu.classList.add('hide-menu');
+        menu.classList.remove('hide-menu');
     });
 });
 
 menuHam.addEventListener('click', () => {
     menu.classList.remove('hide-menu');
+    menuHam.classList.add('hide-menu');
 });
 
 const labelAll = document.querySelectorAll('label');
